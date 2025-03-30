@@ -1,0 +1,296 @@
+/* Dark Theme Variables */
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #f5b800;
+  --accent-color: #f5b800;
+  --hover-text-color: #fff;
+  --header-bg: rgba(0, 0, 0, 0.9);
+  --header-box-shadow: 0 4px 10px rgba(245, 184, 0, 0.3);
+  --button-bg: #f5b800;
+  --button-text: #000;
+  --button-hover-bg: #fff;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+body:hover {
+  cursor: url('cursor-glow.png'), auto;
+}
+
+/* Navigation */
+header {
+  background: var(--header-bg);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--header-box-shadow);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: var(--hover-text-color);
+  text-shadow: 0 0 10px var(--accent-color);
+}
+
+/* INDEX PAGE HERO SECTION */
+#hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;  
+  padding-bottom: 20px;
+  background: none;   
+}
+
+/* Horizontal Row of Images in Index Hero */
+#hero .slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+#hero .slideshow-container .slide {
+  flex: 1;
+  max-width: calc(33.33% - 10px);
+}
+#hero .slideshow-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Hero Content for Index Page */
+#hero .hero-content {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(245, 184, 0, 0.5);
+}
+#hero .hero-content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+#hero .hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+#hero .hero-content .btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#hero .hero-content .btn:hover {
+  background: var(--button-hover-bg);
+}
+
+/* ABOUT PAGE HERO SECTION */
+.hero {
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px; 
+  padding-bottom: 20px;
+  background: none;
+}
+.hero .hero-text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(245, 184, 0, 0.5);
+}
+.hero .hero-text h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.hero .hero-text p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Portfolio Section */
+#portfolio .section-container {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  padding: 20px;
+}
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#portfolio p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* Portfolio Slideshow Container – controlled size */
+#portfolio .slideshow-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#portfolio .slideshow-container .slide {
+  display: none;  
+}
+#portfolio .slideshow-container .slide.active-slide {
+  display: block;
+}
+#portfolio .slideshow-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigation button styles for portfolio slideshow */
+#portfolio .slideshow-container .prev,
+#portfolio .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+  user-select: none;
+  background: rgba(0,0,0,0.5);
+  border-radius: 3px;
+}
+#portfolio .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+#portfolio .slideshow-container .prev:hover,
+#portfolio .slideshow-container .next:hover {
+  color: var(--button-hover-bg);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: var(--accent-color);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+/* Form Styles if needed to fix some errors*/
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  background: var(--button-bg);
+  border: none;
+  color: var(--button-text);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: var(--button-hover-bg);
+}
+.cta-button {
+  background: var(--button-bg);
+  border: none;
+  color: var(--button-text);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.cta-button:hover {
+  background: var(--button-hover-bg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Index Hero: Stack images vertically on small screens */
+  #hero .slideshow-container {
+    flex-direction: column;
+  }
+  #hero .slideshow-container .slide {
+    max-width: 100%;
+  }
+  #hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  #hero .hero-content p {
+    font-size: 1rem;
+  }
+  .hero .hero-text h2 {
+    font-size: 2rem;
+  }
+  .hero .hero-text p {
+    font-size: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
