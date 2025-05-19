@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - NYC Vehicle Photography</title> 
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+ 
+<body>
+
+<header>
+  <div id="header-wrapper">
+    <div id="header" class="container">
+    
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="portfolio-services.html">Portfolio and Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      
+      <div id="logo">
+        <h1><a href="#">NYC Vehicle Photography</a></h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether you're looking for vehicle photography services or have any inquiries, feel free to reach out.</p>
+    </div>
+  </section>
+
+  <main>
+    
+    <section id="contact-details">
+      <div class="section-container">
+        <h3>Contact Information</h3>
+        <p><strong>Email:</strong> <a href="mailto:phillip.yuan@stu.bcc.cuny.edu">phillip.yuan@stu.bcc.cuny.edu</a></p>
+      </div>
+    </section>
+
+    <section id="contact-form">
+      <div class="section-container">
+        <h3>Send Us a Message</h3>
+        <form action="submit-form.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Enter your message here"></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 NYC Vehicle Photography. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:phillip.yuan@stu.bcc.cuny.edu">phillip.yuan@stu.bcc.cuny.edu</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio and Services - NYC Vehicle Photography</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    .slide { display: none; width: 100%; }
+    .slide.active-slide { display: block; }
+  </style>
+</head>
+
+<body>
+   
+<header>
+  <div id="header-wrapper">
+    <div id="header" class="container">
+      
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="portfolio-services.html">Portfolio and Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      
+      <div id="logo">
+        <h1><a href="#">NYC Vehicle Photography</a></h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Our Portfolio and Services</h1>
+      <p>Discover stunning vehicle photography that captures the beauty and power of every car, truck, and motorcycle. Explore our services and book a session today.</p>
+    </div>
+  </section>
+
+  <main>
+   
+    <section id="portfolio">
+      <div class="section-container">
+        <h2>Our Portfolio</h2>
+        <p>Explore our collection of high-quality vehicle photographs.</p>
+        <div class="slideshow-container">
+         
+          <div class="slide active-slide">
+            <img src="Images/A7400030.jpg" alt="BMW">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400054.jpg" alt="R35">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400065.jpg" alt="Built Truck">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400090.jpg" alt="Mustang">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400674.jpg" alt="Rx7 underground">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400686.jpg" alt="R34's">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400694.jpg" alt="Supra">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401411-2.jpg" alt="Widebody Porche">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401340.jpg" alt="Subaru Outback">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401366-2.jpg" alt="Veilside">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401416-2.jpg" alt="RX8">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401368.jpg" alt="G80">
+          </div>
+          <div class="slide">
+            <img src="Images/A7400691.jpg" alt="Itashas">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401375-2.jpg" alt="Miatas">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401397-2.jpg" alt="A90">
+          </div>
+          <div class="slide">
+            <img src="Images/A7401345.jpg" alt="BRZ">
+          </div>
+
+          
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Professional Vehicle Photography</li>
+          <li>Marketing and Sales Shoots</li>
+          <li>Custom Automotive Photoshoots</li>
+          <li>High-Resolution Edits</li>
+        </ul>
+        <a href="contact.html" class="cta-button">Book a Session</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NYC Vehicle Photography. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:phillip.yuan@stu.bcc.cuny.edu">phillip.yuan@stu.bcc.cuny.edu</a></p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.remove('active-slide');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active-slide');
+    }, 3000);
+  </script>
+</body>
+</html>
